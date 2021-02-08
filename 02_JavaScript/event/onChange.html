@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onChange 事件</title>
+
+    <script type="text/javascript">
+
+
+        function  onChange() {
+
+            console.log(" 女神已经改变！")
+        }
+
+
+        window.onload=function () {
+
+            var sltBtn=document.getElementById("selectboy");
+            sltBtn.onchange=function(){
+
+                console.log("选了了心目中的男神!")
+            }
+
+
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+   请选择你心中的女神：
+  <select onchange="onChange()">
+      <option>--女神--</option>
+      <option>张韶涵</option>
+      <option>柳岩</option>
+      <option>刘亦菲</option>
+      <option>贾玲</option>
+  </select>
+</br>
+
+
+    请选择你心中的男神：
+   <select id="selectboy">
+       <option>--男神--</option>
+       <option>汪方晨</option>
+       <option>易小川</option>
+       <option>刘德华</option>
+       <option>王总</option>
+   </select>
+
+
+
+
+
+</body>
+</html>

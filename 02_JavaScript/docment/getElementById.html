@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetElementById</title>
+
+    <script type="text/javascript">
+
+        /*
+        需求：当用户点击了校验按钮，要获取输入框内容，然后验证是否合法
+             校验规则：必须由字母、数字、下划线组成 并且长度是5-12位
+         */
+
+        function  onclickFun() {
+
+            var usernameObj=document.getElementById("username");
+            var userNameText=usernameObj.value;
+            alert(userNameText);
+
+            var patt=/^\w{5,12}$/;
+
+            if(patt.test(userNameText)){
+                alert("用户名合法");
+            }else {
+                alert("用户名不合法!");
+            }
+
+        }
+
+
+    </script>
+
+</head>
+
+
+<body>
+
+用户名：<input type="text"  id="username" value="汪方晨">
+<button onclick="onclickFun()">校验</button>
+
+
+</body>
+</html>

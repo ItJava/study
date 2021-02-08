@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iFrame</title>
+</head>
+<body>
+
+<!-- 一个单独的页面
+ 使用场景： 在页面的一个区域 开辟一个小区域单独显示一个页面。  点击一个菜单按钮，这个窗口就会显示对应的页面
+
+ iframe和a标签组合使用的步骤
+ 1）在iframe 标签中使用name属性定义一个名词
+ 2）在a 标签的target 属性上设置iframe 的name 属性值
+
+
+ -->
+我是一个单独的页面
+<iframe width="400" height="400" src="列表.html" name="jump"></iframe>
+
+<br>
+<ul>
+    <li><a href="表格.html" target="jump"> 表格</a></li>
+    <li><a href="图片.html" target="jump"> 图片</a></li>
+    <li><a href="列表.html" target="jump"> 列表</a></li>
+    <li><a href="表格跨行跨列.html" target="jump"> 表格跨行跨列</a></li>
+</ul>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重载函数调试</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function  fun() {
+        alert("无参的构造函数!")
+    }
+
+    function  fun(a,b) {
+        alert("有参的构造函数 a:"+a+"  b:"+b);
+    }
+
+
+    fun();   //一定会覆盖，永远是最后的那个函数，这个是跟Java有本质区别的
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

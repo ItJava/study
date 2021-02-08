@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐形参数 arguments</title>
+
+    <script type="text/javascript">
+        /*
+       隐形参数 arguments
+         */
+
+        function fun() {
+            alert(arguments.length)  //这就是隐形参数 arguments,具有一定的意义的
+            //看看究竟是一个什么内容  [object Arguments] ： 其实是一个数组
+            alert(arguments)
+            // 既然是数组，那么循环打印内容
+
+            for(var index=0;index<arguments.length;index++){
+                alert("循环打印数组内容:"+arguments[index])
+            }
+
+            alert("无参数函数 fun")
+        }
+
+        //fun(1,2,3);
+
+        /*
+        实际用处： 数据求和
+         */
+
+        function sum() {
+
+            var result=0;
+            for (var index=0;index<arguments.length;index++){
+             var argumentType=typeof(arguments[index])
+                if(argumentType=="number"){
+                  result=result+arguments[index];
+                }
+
+               // alert("参数类型:"+argumentType);
+            }
+            return result;
+        }
+
+
+        alert(sum(1,2,"c",true,3,4,5,6,7,8,9,10));
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

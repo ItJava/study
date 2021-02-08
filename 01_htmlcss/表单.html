@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+
+<!-- 表单其实就是收集用户所有信息内容，然后上传到服务器 使用
+
+ 需求1：创建一个个人信息注册的表单页面。包含用户名，密码，确认密码。性别（单选），兴趣爱好（多选），国籍（下拉列表）.
+      影藏域，自我评价（多行文本）。重置，提交
+
+      form 标签是表单
+
+
+      textarea  多行文本输入框 rows： 显示行数 可显示行的高度   cols:每行可以显示的字符数目
+
+ -->
+
+<form>
+
+    用户名称 <input type="text" value="默认值"><br/>
+    用户密码 <input type="password" value="abc"><br/>
+    确认密码 <input type="password" value="abc"><br/>
+    性别：<input type="radio" name="sex"/>男<input type="radio" name="sex" checked="checked"/>女<br/>
+    兴趣爱好：<input type="checkbox" checked="checked"/>Java<input type="checkbox"/>JavaScript<input
+        type="checkbox"/>C++<br/>
+    国籍：<select>
+    <option value ="volvo">Volvo</option>
+    <option value ="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+
+    </select><br/>
+
+    <textarea rows="10" cols="20">
+     我才是默认值
+    </textarea>
+    <input type="reset" value="重置" />
+    <input type="file" value="" />
+    <input type="hidden" value="hidessss" />
+
+</form>
+
+
+</body>
+</html>

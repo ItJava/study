@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大括号隐形自定义对象</title>
+
+    <script type="text/javascript">
+
+        //对象的定义如下 大括号
+        /*
+        var 变量名={
+
+         属性名：值，
+         属性名：值，
+         函数名：function(){
+
+
+           }
+        }
+         */
+
+
+        var obj={
+            name:'汪方晨',
+            age:19,
+            fun : function () {
+                alert("name:"+this.name+"   age:"+this.age)
+            }
+        };
+
+        alert(obj.name)
+        alert(obj.age)
+
+        obj.fun();
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onsubmit 事件</title>
+
+    <script type="text/javascript">
+
+        function staticSubmit() {
+
+            alert("静态注册!");
+            return false;   //返回值，true 就直接提交、false 是不会提交的。做一些参数验证！
+
+        }
+
+
+        window.onload = function () {
+
+            var formsumbit = document.getElementById("form001");
+            formsumbit.onsubmit = function () {
+                alert("动态注册，提交参数！");
+                return true;
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+
+<form action="https://www.baidu.com/" method="get" onsubmit="return staticSubmit()">
+    <input type="submit" value="静态注册提交">
+</form>
+
+
+</form><br/>
+
+
+<form action="https://www.baidu.com/" method="get" id="form001">
+    <input type="submit" value="动态注册">
+</form>
+
+
+</form><br/>
+
+
+</body>
+</html>

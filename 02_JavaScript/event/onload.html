@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onLoad 事件</title>
+
+    <script type="text/javascript">
+
+        /* onLoad 事件防范*/
+        function onloadFun() {
+
+            alert("静态注册onload 事件，所有代码");
+
+        }
+
+
+        window.onload=function () {
+
+            alert(" 动态注册onLoad 函数!")
+        }
+
+
+    </script>
+
+
+</head>
+
+<!--
+
+静态注册onLoad 事件
+
+-->
+
+<!--<body onload=onloadFun()>-->
+<body>
+
+</body>
+</html>

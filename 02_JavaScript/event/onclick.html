@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onClick 事件</title>
+
+
+</head>
+<body>
+
+<button onclick="alert('静态注册   点击了按钮一')">静态注册事件按钮一点击</button><br/>
+<button onclick="alert('静态注册   点击了按钮二')">静态注册事件按钮二点击</button><br/>
+<button onclick="alert('静态注册   点击了按钮三')">静态注册事件按钮三点击</button><br/>
+<button id="btn4">动态注册事件按钮四点击</button><br/>
+<button id="btn5">动态注册事件按钮五点击</button><br/>
+
+</body>
+
+
+<script type="text/javascript">
+
+
+    var btn4obj=document.getElementById("btn4")
+    btn4obj.onclick=function () {
+
+        alert("按钮四  动态注册，点击事件")
+
+    }
+
+
+    var btn5obj=document.getElementById("btn5");
+    btn5obj.onclick=function () {
+
+        alert("按钮五  动态注册，点击事件")
+
+    }
+
+
+</script>
+
+</html>

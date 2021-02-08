@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单提交</title>
+</head>
+<body>
+
+<!-- 表单其实就是收集用户所有信息内容，然后上传到服务器 使用
+
+     form 表单
+     action 属性： 提交到服务器的地址
+     method 属性：设置提交的方法 GET（默认值） 或则 POS
+
+
+     表单 提交时候，数据没有发送给服务器三种情况：
+        1）表单没有name 属性
+        2) 单选、复选（下拉列表中的option标签）,那需要添加value 属性，一遍发送给服务器
+        3）表单项 不再提交的form 标签中
+
+action=login&sex=on
+
+
+ -->
+
+<form  align="center" action="https://www.baidu.com/" method="get">
+<h1> 表格表单</h1>
+
+<table align="center">
+
+    <input type="hidden" name="action" value="login" />
+
+    <tr>
+        <td>用户名称</td>
+        <td><input type="text" name="username" value="name_wfc"></td>
+
+    </tr>
+
+    <tr>
+        <td>用户密码</td>
+        <td><input type="password"  name="usernamepwd" value="abc"></td>
+
+    </tr>
+
+    <tr>
+        <td>确认密码</td>
+        <td><input type="password" name="querypwd" value="abc"></td>
+
+    </tr>
+
+    <tr>
+        <td>性别</td>
+        <td><input type="radio" name="sex"/>男<input type="radio" name="sex" checked="checked"/>女</td>
+
+    </tr>
+
+    <tr>
+        <td>兴趣爱好</td>
+        <td><input type="checkbox" checked="checked" name="hobbyjava"/>Java<input type="checkbox" name="hobbyjava"/>JavaScript<input
+                type="checkbox" name="hobbyjava"/>C++
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>国籍</td>
+        <td><select name="selectguoji">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+
+        </select></td>
+
+    </tr>
+
+    <tr>
+        <td>自我评价</td>
+        <td> <textarea rows="10" cols="20">
+     我才是默认值
+    </textarea> </td>
+    </tr>
+
+    <tr>
+        <td><input type="file" value=""/></td>
+        <td><input type="submit" value="提交"/></td>
+
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+</form>
+
+
+</body>
+</html>

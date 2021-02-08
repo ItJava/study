@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onblur 事件</title>
+
+</head>
+<body>
+
+用户名：<input type="text"  onblur="onbluFuc()"/><br/>
+密码：<input id="pwd" type="password"  onblur="funcOnBluue()"/><br/>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+
+    function onbluFuc() {
+
+        console.log(" 动态失去焦点事件")
+
+    }
+
+
+
+    function funcOnBluue() {
+
+        //window.onblur=fu
+
+        var btnpwd=document.getElementById("pwd");
+
+        btnpwd.onblur=function () {
+
+            console.log("pwd 的onblue 事件！")
+
+        }
+    }
+
+
+</script>
+
+
+
+
+</html>
