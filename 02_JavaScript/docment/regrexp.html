@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+
+    <script type="text/javascript">
+
+        /*
+        教程w3cschool 菜鸟教程 新版本.chm 教程
+         */
+/*
+//第一部分 方括号的 正则表达式
+
+
+        var patt = new RegExp("[abc]")   // 第一种正则表达式对象
+        var patt1 = /[abc]/;             //第二种正则表达式对象
+        alert(patt1);
+        if (patt1.test("b")) {
+            alert(" 正则表达式 范围之内的，OK！")
+        } else {
+            alert(" 正则表达式 错误，不在范围内！")
+        }
+        */
+
+   //[^abc]   查找任何不在方框内的字符串
+
+   /*     var patt=/[^abc]/;
+        var str="mm";
+        alert(patt.test(str));
+        */
+
+
+  /*      //[0-9]   查找任何从0 到 9 的数字
+        var patt=/[0-9]/;
+        var str="a";
+        alert(patt.test(str));
+*/
+
+        //第二部分 元字符的 正则表达式
+
+        var patt=/\w/;     //单词字符：包括 a-z,A-Z,0-9 以及下划线，包好_字符
+        var str="12";
+        alert(patt.test(str));
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
