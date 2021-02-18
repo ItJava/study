@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两种常见提示效果</title>
+
+    <script type="text/javascript">
+
+        function functionf() {
+
+            var obj=document.getElementById("inputid");
+            var a=obj.value;
+            var patt=/^\w{5,12}$/;
+            var obj1=document.getElementById("spanvalue");
+            if(patt.test(a)){
+                obj1.innerHTML="数据合法";
+            }else {
+                obj1.innerHTML="数据不合法";
+            }
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+<input type="text" id="inputid" value="">
+<button onclick="functionf()">校验</button>
+<span id="spanvalue"></span>
+</body>
+</html>
