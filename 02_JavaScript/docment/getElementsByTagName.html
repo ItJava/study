@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName</title>
+    <script type="application/javascript">
+
+        function checkAll(){
+            //getElementsByTagName  返回多个dom对象集合
+            var hobbys=document.getElementsByTagName("input")
+            for(var index=0;index<hobbys.length;index++){
+                // alert(hobbys[index]+"  "+hobbys[index].checked);
+                // alert(hobbys[index].checked);
+                hobbys[index].checked=true;
+            }
+        };
+
+        function checkNo(){
+            var hobbys=document.getElementsByTagName("input")
+            for(var index=0;index<hobbys.length;index++){
+                hobbys[index].checked=false;
+            }
+        };
+
+        function checkReverse(){
+            var hobbys=document.getElementsByTagName("input")
+            for(var index=0;index<hobbys.length;index++){
+                hobbys[index].checked=!(hobbys[index].checked);
+            }
+        };
+
+    </script>
+
+</head>
+<body>
+兴趣爱好：<br>
+<input type="checkbox"   value="cpp">CPP<br>
+<input type="checkbox"   value="Java">Java<br>
+<input type="checkbox"  value="C++">C++<br>
+<input type="checkbox"   value="JavaScript">JavaScript<br>
+
+<button onclick="checkAll()">全选</button>
+<button onclick="checkNo()">全部选</button>
+<button onclick="checkReverse()">反选</button>
+
+</body>
+</html>
